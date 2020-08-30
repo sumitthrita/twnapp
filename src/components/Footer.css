@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: ’Lato’, sans-serif;
+    margin: 0; 
+    padding: 0;
+    
+}
+
+  .footer{
+    display: flex;
+    min-height: 100vh;
+    
+    flex-direction: column;
+} 
+
+.footer_wrapper {
+    display:flex;
+    justify-content: space-between;
+}
+
+/* .footer_main{
+  margin-top: .6em;
+  padding: 1em;
+  background: #000;
+  color: #fff;
+}
+
+  .footer_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.4em;
+    max-width: 1200px;
+    padding: 1em calc(1em + 3vw);
+    margin: 0 auto;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+
+  */
+
+/* 
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+}
+footer a {
+    text-decoration: none;
+    color: #eee;
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer_title {
+    color: #fff;
+    font-family: ’Merriweather’, serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+}
+
+.container {
+    flex: 1;    
+}
+.footer_main{
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_mainItems{
+    padding: 1.25rem;
+    min-width: 12.5rem ;
+}
+
+@media only screen and (min-width: 29.8125rem ) {
+    .footer_main{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 77.5rem  ) {
+    .footer_main{
+        justify-content: space-evenly;
+    }
+} */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+input[type="submit"] {
+    background-color: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+}
+
+.footer_social{
+    padding: 0 1.875rem 1.25rem;
+}
+.footer_socialList {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid; 
+    padding-top: 1.25rem;
+}
+.footer_socialList li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+}
+.footer_legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+}
+.footer_legalList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_legalList li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+}
+/* one before the last child */
+.footer_legalList li:nth-last-child(2) {
+    flex: 1;       /* same as flex-grow: 1; */
+}
+

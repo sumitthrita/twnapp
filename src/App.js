@@ -1,30 +1,38 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
-import Homepage from './components/Homepage'
+import Homepage from './components/Homepage';
+import Blog from './components/Blog';
+import {BrowserRouter,Redirect, Switch,Route} from 'react-router-dom';
 
-function App() {
+const App=()=> {
   return (
-    <div>
-      <Homepage />
-    </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+ 
+      <BrowserRouter>
+      
+         <Switch>
+         <Homepage/>
+<Route exact path="/Home" component={Homepage} />
+<Route exact path="/">
+  <Redirect to="/Home" />
+</Route>
+<Route exact path="/Blog" component={Blog} />
+</Switch>
+
+        {/* <Route path="/Homepage" exact component={Homepage} />
+        <Route path="/Blog" exact component ={Blog} /> */}
+      </BrowserRouter>      
+  
   );
 }
-
 export default App;
+
+
+
+{/* <Switch>
+<Route exact path="/Home" component={Home} />
+<Route exact path="/">
+  <Redirect to="/Home" />
+</Route>
+<Route exact path="/About" component={About} />
+</Switch> */}
