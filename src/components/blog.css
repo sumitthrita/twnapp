@@ -1,69 +1,142 @@
 body {
-    font-family: Arial;
-    padding: 20px;
-    background: #f1f1f1;
-  }
-  
-  /* Header/Blog Title */
-  .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: white;
-  }
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {
-    float: left;
-    width: 75%;
-  }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
+  font-family: Arial;
+  background: #fff;
+}
 
-  .blog__divs{
-      display: flex;
-      justify-content: space-between;
-  }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-  }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ff0000;
+}
+
+.blog {
+  display: grid;
+  /* background-color: #ff0000; */
+  width: 100%;
+}
+
+.blog__top {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  height: 350px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.blog__topLeft {
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  display: grid;
+  justify-content: space-between;
+}
+.blog__topLeft h2 {
+  padding-top: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Roboto;
+  color: black;
+  margin: 5px;
+  top: 20px;
+  text-align: center;
+}
+.blog__topLeft p {
+  padding: 5px;
+  font-size: 20px;
+  font-family: Montserrat;
+  color: black;
+  margin: 5px;
+  text-align: center;
+}
+.blog__topRight {
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  margin: 5px;
+  padding: 5px;
+}
+.blog__headerImg {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+  padding: 10px 0;
+}
+
+.blog__mid {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: yellow; */
+  width: 100%;
+  /* background-color: white; */
+  height: 500px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.blog__midColumnImg {
+  height: 200px;
+  width: 468px;
+  right: 0;
+}
+
+.blog__column1 {
+  width: 33.33%;
+  /* background-color: violet; */
+  padding: 10px;
+  height: 100%;
+  display: grid;
+}
+.button-lg {
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.button-lg:hover {
+  background-color: #ff0000;
+}
+button {
+  color: white;
+}
+button:hover {
+  color: black;
+}
+
+.blog__column2 {
+  width: 33.33%;
+  /* background-color: wheat; */
+  padding: 10px;
+  height: 100%;
+  display: grid;
+  align-items: center;
+}
+.blog__column2 input {
+  left: auto;
+  right: auto;
+}
+.blog__column3 {
+  width: 33.33%;
+  /* background-color: teal; */
+  padding: 10px;
+  height: 100%;
+  display: grid;
+  justify-content: space-between;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}

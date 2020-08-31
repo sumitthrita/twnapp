@@ -1,0 +1,28 @@
+.post__img {
+  height: 70px;
+  width: 70px;
+  left: 0;
+  margin: 5px;
+  padding: 5px;
+}
+
+.description {
+  height: 70px;
+  width: fit-content;
+  right: 0;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* .card {
+    height: 100px;
+    width: 100px;
+  } */
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  color: #ff0000;
+}
