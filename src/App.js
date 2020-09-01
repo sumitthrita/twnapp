@@ -15,9 +15,9 @@ const App=()=> {
         <div>
          {/* <Homepage /> */}
          <Switch>
-           <Route path="/" exact component={Homepage} />
-           <Route path="/blog"  exact component={Blog} />
-           <Route path="/services" exact component={Service} />
+           <Route path="/" exact strict component={Homepage} />
+           <Route path="/blog"  exact strict component={Blog} />
+           <Route path="/services" exact strict component={Service} />
          </Switch>
          </div>
    </Router>    

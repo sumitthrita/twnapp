@@ -6,6 +6,7 @@ import RecentNewstDetails from "./Blog/recentNewsDetails";
 import RecentPost from "./Blog/RecentPost";
 import RecentNews from "./Blog/RecentNews";
 import ThisWeekDetails from "./Blog/thisWeekLatestDetails";
+import Header from "./Header";
 
 function Blog() {
   function createPost(contact) {
@@ -24,7 +25,7 @@ function Blog() {
   let date = new Date().toDateString();
 
   return (
-    <div className="blog">
+    <div ><Header />
       <div className="blog__top">
         <div className="blog__topLeft">
           <h2>Our Blog</h2>

@@ -3,6 +3,8 @@
     height: 300px;
     position: relative;
     overflow: hidden;
+    z-index: 1;
+    top:100px;
 }
  
 .slide {
@@ -69,5 +71,6 @@ color: #fff;
 
 
 .space {
+   
     height: 20px;
 }

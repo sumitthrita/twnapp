@@ -70,8 +70,8 @@ h6 {
 }
 
 .blog__mid {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr ;
   /* background-color: yellow; */
   width: 100%;
   /* background-color: white; */
@@ -80,6 +80,19 @@ h6 {
   align-items: center;
   margin-bottom: 20px;
 }
+@media screen and (max-width:300px) {
+  .blog__mid {
+  display: grid;
+  grid-template-columns:1fr;
+  /* background-color: yellow; */
+  width: 100%;
+  /* background-color: white; */
+  height: 500px;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;}
+} 
+
 .blog__midColumnImg {
   height: 200px;
   width: 468px;

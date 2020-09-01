@@ -2,6 +2,8 @@ import React from "react";
 import "./Footer.css";
 import fb from "./fb.jpeg";
 import instagram from "./instagram.jpeg";
+
+
 const Footer = () => (
   <footer>
     <div className="footer__main">
@@ -49,6 +51,7 @@ const Footer = () => (
       <ul class="footer__socialList">
         <li>
           <a href="./App.js">
+           
             <i class="footer__socialFacebook"></i>
             <img src={fb} alt="facebook" />
           </a>
