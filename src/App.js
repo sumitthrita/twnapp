@@ -2,37 +2,26 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import Homepage from './components/Homepage';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Blog from './components/Blog';
-import {BrowserRouter,Redirect, Switch,Route} from 'react-router-dom';
+import Service from './components/Service';
+
 
 const App=()=> {
-  return (
- 
-      <BrowserRouter>
-      
-         <Switch>
-         <Homepage/>
-<Route exact path="/Home" component={Homepage} />
-<Route exact path="/">
-  <Redirect to="/Home" />
-</Route>
-<Route exact path="/Blog" component={Blog} />
-</Switch>
-
-        {/* <Route path="/Homepage" exact component={Homepage} />
-        <Route path="/Blog" exact component ={Blog} /> */}
-      </BrowserRouter>      
   
+  return ( 
+    <Router>
+        <div>
+         {/* <Homepage /> */}
+         <Switch>
+           <Route path="/" exact component={Homepage} />
+           <Route path="/blog"  exact component={Blog} />
+           <Route path="/services" exact component={Service} />
+         </Switch>
+         </div>
+   </Router>    
   );
 }
+
 export default App;
 
-
-
-{/* <Switch>
-<Route exact path="/Home" component={Home} />
-<Route exact path="/">
-  <Redirect to="/Home" />
-</Route>
-<Route exact path="/About" component={About} />
-</Switch> */}
