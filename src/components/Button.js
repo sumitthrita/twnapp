@@ -1,14 +1,15 @@
 import React from 'react';
 import './Button.css';
+import {Button} from 'react-bootstrap';
 
 
-const Button=(props)=>{
+const Buttons =(props)=>{
 
     return (
         // <button  className="button"  type="button" onClick={props.buttonDestination}>
         //    {props.buttonName}   
         // </button>
-        <button className="button" >its me button</button>
+        <Button variant="dark" className="button">Dark</Button>
     )
 }
-export default Button;
+export default Buttons;

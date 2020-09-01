@@ -4,10 +4,9 @@
     text-align: center;
     cursor: pointer;
     outline-style: none;
-    background-color: white;
+    background-color: black;
     border:none;
-    color: red;
-
+    color: white;
 }
 
 .button:hover {
@@ -16,5 +15,4 @@
 }
 .button:active {
     background-color:#282863 ;
-    
 }

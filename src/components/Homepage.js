@@ -6,7 +6,7 @@ import slideTwo from './slide2.jpeg';
 import slideThree from './slide3.jpeg';
 import slideFour from './slide4.jpeg';
 import slideFive from './slide5.jpeg';
-import Button from './Button.js';
+import Button from './Button'
 import './Homepage.css';
 
 const slides = [];
@@ -14,7 +14,7 @@ slides.push(slideOne,slideTwo,slideThree,slideFour,slideFive);
 
 const Homepage= () => {
     return(
- <div>
+ <div >
      <Header />
      
      <div className="space">
