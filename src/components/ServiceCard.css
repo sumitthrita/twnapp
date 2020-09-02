@@ -1,4 +1,109 @@
-.Card.img{
-    width:100px;
-    height:120px;
+.service__img {
+  width: 250px;
+  height: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service {
+  margin: 10px;
+}
+
+/* .services__card {
+  margin: 10px;
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.card {
+  background-color: rgba(199, 199, 199, 0.356);
+}
+
+.service__title {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  border: 1px solid red;
+  color: red;
+  margin: 5px;
+  padding: 5px;
+}
+
+.title {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  float: left;
+  align-items: left;
+}
+
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .impact {
+    justify-content: space-evenly;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 60em) {
+  .impact {
+    justify-content: space-evenly;
+    font-size: 30px;
+  }
+}
+
+.services__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-bottom: auto;
+  flex-direction: row;
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+.service__money {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  float: right;
+  padding-left: 40px;
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .services__card {
+    justify-content: space-evenly;
+    flex: 1;
+  }
+}
+
+@media (min-width: 60em) {
+  .services__card {
+    justify-content: space-evenly;
+    flex: 1;
+  }
+}
+
+/* .list-group-flush {
+  color: red;
+  font-family: "Merriweather", serif;
+} */
+.service__description {
+  margin-top: 10px;
+}
+
+.bikeservice__image {
+  width: 100%;
+}
+
+.impact {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 60px;
+  color: #191970;
+  text-align: center;
+}
+
+#service__button {
+  width: 10px;
+  font-size: 10px;
+  border-radius: 5%;
 }

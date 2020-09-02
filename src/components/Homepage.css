@@ -1,73 +1,117 @@
-.homepage__slideshow{
-    width: 100%;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
+.homepage__slideshow {
+  width: 100%;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
 }
- 
+
 .slide {
-    height:100%;
-    width:100%;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    animation: anime 20s infinite;
-    opacity: 0;
-    padding: 1em;
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;   
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  animation: anime 20s infinite;
+  opacity: 0;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .slide:nth-child(1) {
-animation-delay: 16s;
-color: #fff;
+  animation-delay: 16s;
+  color: #fff;
 }
 
 .slide:nth-child(2) {
-animation-delay: 12s;
-color: #fff;
+  animation-delay: 12s;
+  color: #fff;
 }
 
 .slide:nth-child(3) {
-animation-delay: 8s;
-color: #fff;
+  animation-delay: 8s;
+  color: #fff;
 }
 
 .slide:nth-child(4) {
-animation-delay: 4s;
-color: #fff;
+  animation-delay: 4s;
+  color: #fff;
 }
-            
+
 .slide:nth-child(5) {
- animation-delay:0s;
- color: #fff;
+  animation-delay: 0s;
+  color: #fff;
 }
 
-@keyframes anime{
-25%{
+@keyframes anime {
+  25% {
     opacity: 1;
-}    
-40%
-{
+  }
+  40% {
     opacity: 0;
-}
-}
-
-.homepage__bookNow{
-    display:flex;
-    justify-content: flex-end;
-    padding: 0;
-    width:100%;
+  }
 }
 
-.homepage__servicesection{
-    width: 100%;
-    height: 300px;
-    position: relative;
+.homepage__bookNow {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.homepage__servicesection {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.homepage__arrowBox {
+  width: 200px;
+  height: 100px;
+  background-color: #ff0000;
+  border-radius: 5px;
+  top: 3em;
+  left: 230px;
+  padding: 5px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.box {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 
-.space {
-    height: 20px;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */

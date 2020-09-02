@@ -76,7 +76,6 @@ function Blog() {
             {RecentNewstDetails.map(createNews)}
           </div>
         </div>
-
         <div className="blog__column3">
           <div className="card">
             <h3 className="blog__recentPostTitle">Recent Post</h3>
@@ -85,7 +84,6 @@ function Blog() {
           </div>
         </div>
       </div>
-
       {/* <div className="blog__bottom">
         <Footer />
       </div> */}

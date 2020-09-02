@@ -1,0 +1,50 @@
+.bikeservice__image {
+  width: 100%;
+}
+
+.impact {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 50px;
+  color: #191970;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* @media only screen and (min-width: 29.8125rem) {
+  .impact {
+    justify-content: space-evenly;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 60em) {
+  .impact {
+    justify-content: space-evenly;
+    font-size: 30px;
+  }
+} */
+
+.details__service {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-bottom: auto;
+  flex-direction: row;
+  padding: 1.25rem;
+  min-width: 12.5rem;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .details__services {
+    justify-content: space-evenly;
+    flex: 1;
+  }
+}
+
+@media (min-width: 60em) {
+  .details__services {
+    justify-content: space-evenly;
+    flex: 1;
+  }
+}

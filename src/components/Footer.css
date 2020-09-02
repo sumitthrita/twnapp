@@ -1,113 +1,126 @@
-* {
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  footer {
-    background-color: #000;
-    color: #bbb;
-    line-height: 1.5;
-  }
-  footer a {
-    text-decoration: none;
-    color: #eee;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  a img {
-    width: 34px;
-  }
-  .footer__title {
-    color: #fff;
-    font-family: "Merriweather", serif;
-    font-size: 1.375rem;
-    padding-bottom: 0.625rem;
-  }
-  
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  .container {
-    flex: 1;
-  }
-  /* Footer main */
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer {
+  background-color: #000;
+  color: #bbb;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+a img {
+  width: 34px;
+}
+.footer__title {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  flex: 1;
+}
+/* Footer main */
+.footer__main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 29.8125rem /* 477px */) {
   .footer__main {
-    padding: 1.25rem 1.875rem;
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  @media only screen and (min-width: 29.8125rem /* 477px */) {
-    .footer__main {
-      flex:1;
-    }
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .footer__main {
+    flex: 1;
+    justify-content: space-between;
   }
-  @media only screen and (min-width: 77.5rem /* 1240px */) {
-    .footer__main {
-      flex:1;
-    }
-  }
-  .footer__mainItems {
-    padding: 1.25rem;
-    min-width: 12.5rem;
-  }
-  
-  /* Footer main | Newsletter form */
-  form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  input[type="email"] {
-    border: 0;
-    padding: 0.625rem;
-    margin-top: 0.3125rem;
-  }
-  input[type="submit"] {
-    background-color: #191970;
-    color: #fff;
-    cursor: pointer;
-    border: 0;
-    padding: 0.625rem 0.9375rem;
-    margin-top: 0.3125rem;
-  }
-  /* Footer social */
-  .footer__social {
-    padding: 0 1.875rem 1.25rem;
-  }
-  .footer__socialList {
-    display: flex;
-    justify-content: center;
-    border-top: 1px #777 solid;
-    padding-top: 1.25rem;
-  }
-  .footer__socialList li {
-    margin: 0.5rem;
-    font-size: 1.25rem;
-  }
-  /* Footer legal */
-  .footer__legal {
-    padding: 0.9375rem 1.875rem;
-    background-color: #333;
-  }
-  .footer__legalList {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer__legalList li {
-    margin: 0.125rem 0.625rem;
-    white-space: nowrap;
-  }
-  /* one before the last child */
-  .footer__legalList li:nth-last-child(2) {
+}
+.footer__mainItems {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+/* Footer main | Newsletter form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+input[type="submit"] {
+  background-color: #191970;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+/* Footer social */
+.footer__social {
+  padding: 0 1.875rem 1.25rem;
+}
+.footer__socialList {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+}
+.footer__socialList li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+/* Footer legal */
+.footer__legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+.footer__legalList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__legalList li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+/* one before the last child */
+.footer__legalList li:nth-last-child(2) {
+  flex: 1;
+}
+
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .footer {
+    justify-content: space-evenly;
     flex: 1;
   }
-  
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .footer {
+    flex: 1;
+    justify-content: space-evenly;
+  }
+}

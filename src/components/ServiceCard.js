@@ -1,30 +1,39 @@
-import React from 'react';
-import {Card,ListGroup,ListGroupItem} from 'react-bootstrap';
-import Logo from './logo.jpeg';
-import './ServiceCard.css';
+import React from "react";
+import { Card, CardGroup } from "react-bootstrap";
+import "./ServiceCard.css";
+import Button from "./Button";
 
-function ServiceCard()
-{
+function ServiceCard(props) {
+  return (
+    <div className="service">
+      {/* <div className="service__image">
+        <img src={BikeImage} alt="bike" className="bikeservice__image"></img>
+      </div>
 
-    return(
-        <Card style={{ width: '18rem' }} id="Services">
-        <Card.Img variant="top" src={Logo}/>
-        <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>  Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-        </Card.Text>
-         </Card.Body>
-         <ListGroup className="list-group-flush">
-         <ListGroupItem>Cras justo odio</ListGroupItem>
-         <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-         <ListGroupItem>Vestibulum at eros</ListGroupItem>
-         </ListGroup>
-         <Card.Body>
-          <Card.Link href="#">Another Link</Card.Link>
-          </Card.Body>
+      <h1 class="impact">Services We Provide..</h1> */}
+      <div className="services__card">
+        <CardGroup>
+          <Card style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={props.img} className="service__img" />
+            <Card.Body>
+              <div className="service__title">
+                <Card.Title className="title">{props.title}</Card.Title>
+                <p className="service__money"> {props.price}</p>
+              </div>
+              <Card.Text>
+                <p className="service__description">{props.description}</p>
+                {/* <ul>
+                <li>good.</li>
+                <li>good.</li>
+                <li>good.</li>
+              </ul> */}
+              </Card.Text>
+              <Button id="service___button" />
+            </Card.Body>
           </Card>
- 
-);
+        </CardGroup>
+      </div>
+    </div>
+  );
 }
 export default ServiceCard;

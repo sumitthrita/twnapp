@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import fb from "./fb.jpeg";
-import instagram from "./instagram.jpeg";
+// import { FacebookIcon, InstagramIcon } from "@material-ui/icons";
 const Footer = () => (
   <footer>
     <div className="footer__main">
@@ -33,7 +32,9 @@ const Footer = () => (
 
       <div className="footer__mainItems">
         <h2 className="footer__title">Stay Updated With Us</h2>
-        <p>Subscribe to out newsletter to get our latest updates.</p>
+        <p style={{ color: "#bbb" }}>
+          Subscribe to out newsletter to get our latest updates.
+        </p>
         <form>
           <input
             type="email"
@@ -49,14 +50,14 @@ const Footer = () => (
       <ul class="footer__socialList">
         <li>
           <a href="./App.js">
-            <i class="footer__socialFacebook"></i>
-            <img src={fb} alt="facebook" />
+            <i class="fab fa-facebook" style={{ color: "lightblue" }}></i>
+            {/* <img src={FacebookIcon} alt="facebook" /> */}
           </a>
         </li>
         <li>
           <a href="./App.js">
             <i class="footer__socialInstagram"></i>
-            <img src={instagram} alt="instagram" />
+            {/* <img src={InstagramIcon} alt="instagram" /> */}
           </a>
         </li>
       </ul>
