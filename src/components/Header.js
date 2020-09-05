@@ -10,7 +10,7 @@ const Header =()=>{
 
 
 return (
- <Navbar fixed="top" className="headnav" expand="lg" >
+ <Navbar sticky="top" className="headnav" expand="lg" >
   <Navbar.Brand href="/"><img className="header__logoImage" src={Image} alt="twn-logo" /></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" id="navbar-toggler-icon"/>
   <Navbar.Collapse id="responsive-navbar-nav">

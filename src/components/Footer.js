@@ -1,8 +1,9 @@
 import React from "react";
 import "./Footer.css";
-import fb from "./fb.jpeg";
-import instagram from "./instagram.jpeg";
-
+import IconButton from "@material-ui/core/IconButton";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import {Link} from 'react-router-dom';
 
 const Footer = () => (
   <footer>
@@ -10,9 +11,9 @@ const Footer = () => (
       <div className="footer__mainItems">
         <h4 className="footer__title">Menu</h4>
         <ul>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Blogs</li>
+          <li><Link to="/" >Home</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/blog">Blogs</Link></li>
         </ul>
       </div>
 
@@ -35,7 +36,9 @@ const Footer = () => (
 
       <div className="footer__mainItems">
         <h2 className="footer__title">Stay Updated With Us</h2>
-        <p>Subscribe to out newsletter to get our latest updates.</p>
+        <p style={{ color: "#bbb" }}>
+          Subscribe to out newsletter to get our latest updates.
+        </p>
         <form>
           <input
             type="email"
@@ -50,17 +53,10 @@ const Footer = () => (
     <div className="footer__social">
       <ul class="footer__socialList">
         <li>
-          <a href="./App.js">
-           
-            <i class="footer__socialFacebook"></i>
-            <img src={fb} alt="facebook" />
-          </a>
+          <Link to="/"><FacebookIcon /></Link>
         </li>
         <li>
-          <a href="./App.js">
-            <i class="footer__socialInstagram"></i>
-            <img src={instagram} alt="instagram" />
-          </a>
+          <Link to="/"><InstagramIcon /></Link>
         </li>
       </ul>
     </div>
