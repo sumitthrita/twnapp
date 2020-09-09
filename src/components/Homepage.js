@@ -12,6 +12,7 @@ import ServiceSectionDetails from "./servicesectiondetails";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Contact from './Contact';
 
 import "./Homepage.css";
 // import { Carousel } from "react-bootstrap";
@@ -51,7 +52,7 @@ const Homepage = () => {
           >
             <div class="box">
               <div className="homepage__bookNow">
-                <Button />
+                <Button buttonName="Book Service" />
                 <div className="homepage__arrowBox">
                   <p style={{ color: "#fff" }}>
                     it was popularised in the 1960s with the release of Letraset
@@ -79,6 +80,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <Contact />
       <Footer />
     </div>
   );
