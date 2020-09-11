@@ -1,4 +1,5 @@
-import Img from "./service.jpg";
+// import Img from "./service.jpg";
+import Img from './blogs.jpg';
 
 const ServiceSectionDetails = [
   {

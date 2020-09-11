@@ -1,7 +1,6 @@
 import React from "react";
 import "./ServiceSection.css";
-import { Link } from "react-router";
-// import img from "./service.jpg";
+
 
 function ServiceSection(props) {
   return (

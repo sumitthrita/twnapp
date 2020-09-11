@@ -34,7 +34,11 @@ class Service extends Component {
               className="bikeservice__image"
             ></img>
           </div>
-          <h1 class="impact">Services We Provide....</h1>
+          <div className="servicestitle">
+            <span>What We Provide</span>
+            <h2>Services We Provide</h2>
+            <div className="bar"></div>
+          </div>
           <div className="details__service">
             {ServiceCardDetails.map(createService)}
           </div>

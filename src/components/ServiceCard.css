@@ -1,10 +1,12 @@
 .service__img {
-  width: 250px;
-  height: 180px;
+  /* width: 100%;
+  height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+  margin: auto;
+  object-fit: cover; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .service {
@@ -70,16 +72,17 @@
   font-size: 15px;
 }
 
-@media only screen and (min-width: 29.8125rem /* 477px */) {
+@media only screen and (min-width: 29.8125rem) {
   .services__card {
-    justify-content: space-evenly;
+    width: 100%;
     flex: 1;
   }
 }
 
 @media (min-width: 60em) {
   .services__card {
-    justify-content: space-evenly;
+    width: auto;
+    height: auto;
     flex: 1;
   }
 }
@@ -88,9 +91,9 @@
   color: red;
   font-family: "Merriweather", serif;
 } */
-.service__description {
+/* .service__description {
   margin-top: 10px;
-}
+} */
 
 /* .bikeservice__image {
   width: 100%;
@@ -107,4 +110,35 @@
   width: 10px;
   font-size: 10px;
   border-radius: 5%;
+}
+
+@media screen and (max-width: 400px) {
+  .service .services__card {
+    width: auto;
+    height: auto;
+    max-width: auto;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service .Card.Img {
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    margin: 0;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .service .service__title,
+  .service .title,
+  .service p .service__money {
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    margin: 0;
+    object-fit: cover;
+  }
 }
