@@ -33,7 +33,7 @@ function ServiceCard(props) {
                 <li>good.</li>
               </ul> */}
               </Card.Text>
-              <Button id="service___button"/>
+              <Button id="service___button" buttonName="Book Service"/>
             </Card.Body>
           </Card>
         </CardGroup>

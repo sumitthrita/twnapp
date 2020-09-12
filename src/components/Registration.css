@@ -9,63 +9,74 @@ body {
 .register__form {
   margin: auto;
   width: 50%;
-  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  display: block;
-  /* padding: 0 0.5em; */
-  /* padding-right: 50px; */
-  /* margin: 0 auto; */
+.register__button {
+  width: 100%;
+  float: right;
 }
+
 .register__title {
-  display: flex;
-  flex-direction: column;
-  display: block;
+  color: red;
+  width: 100%;
 }
-input[type="text"] {
+
+.emailid {
   border: 0;
   padding: 0.625rem;
-  margin-top: 0.3125rem;
-  border-radius: 4px;
-  resize: vertical;
-  border: 1px solid #ccc;
-}
-input[type="tel"] {
-  border: 0;
-  padding: 0.625rem;
-  margin-top: 0.3125rem;
-  border-radius: 4px;
-  resize: vertical;
-  border: 1px solid #ccc;
-}
-input[type="email"] {
-  border: 0;
-  padding: 0.625rem;
-  margin-top: 0.3125rem;
+  margin: 10px;
   border-radius: 4px;
   resize: vertical;
   border: 1px solid #ccc;
 }
 
-input[type="password"] {
-  border: 0;
+.fpassword {
   padding: 0.625rem;
-  margin-top: 0.3125rem;
+  margin: 10px;
   border-radius: 4px;
   resize: vertical;
   border: 1px solid #ccc;
 }
 
-input[type="checkbox"] {
-  border: 0;
+.confirmpassword {
   padding: 0.625rem;
-  margin-top: 0.3125rem;
+  margin: 10px;
+  border-radius: 4px;
+  resize: vertical;
+  border: 1px solid #ccc;
+}
+
+.firstname {
+  padding: 0.625rem;
+  margin: 10px;
+  border-radius: 4px;
+  resize: vertical;
+  border: 1px solid #ccc;
+}
+
+.lastname {
+  padding: 0.625rem;
+  margin: 10px;
+  border-radius: 4px;
+  resize: vertical;
+  border: 1px solid #ccc;
+}
+
+.checkbox {
+  padding: 0.625rem;
+  margin: 10px;
+  border-radius: 4px;
+  resize: vertical;
+  border: 1px solid #ccc;
+}
+
+.contactnumber {
+  padding: 0.625rem;
+  margin: 10px;
   border-radius: 4px;
   resize: vertical;
   border: 1px solid #ccc;
@@ -73,26 +84,57 @@ input[type="checkbox"] {
 
 .form__control {
   background-color: white;
-  margin: 5px;
   border-radius: 4px;
   resize: vertical;
   border: 1px solid #ccc;
 }
 
-@media screen and (max-width: 600px) {
-  .input,
-  .form__control,
-  input[type="submit"] {
+.form__group {
+  display: table-row;
+  padding: 10px;
+}
+.input {
+  display: table-cell;
+}
+.form__control {
+  display: table-cell;
+}
+.registerform {
+  display: table;
+}
+
+@media screen and (max-width: 400px) {
+  .register__form,
+  .register__form .registerform,
+  .registerform .register__title,
+  .registerform .form__group,
+  .registerform .input,
+  .registerform .form__control
+   {
+    display: flex;
+    flex-direction: column;
+    -ms-flex: 50%;
+    flex: 50%;
+    margin-top: 10px;
     width: 100%;
-    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:5px;
   }
 }
 
-/* input[type="submit"] {
-  background-color: #191970;
-  color: #fff;
-  cursor: pointer;
-  border: 0;
-  padding: 0.625rem 0.9375rem;
-  margin-top: 0.3125rem; 
-} */
+@media screen and (max-width: 400px) {
+  .register__form,
+  .registerform .register__button 
+  {
+    display: flex;
+    flex-direction: column;
+    -ms-flex: 50%;
+    flex: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

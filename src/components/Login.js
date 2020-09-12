@@ -14,21 +14,21 @@ function Login(props) {
         <form>
           <h2 className="login__title">Login Form</h2>
 
-          <div className="form__group">
-            <label className="input">Email address</label>
+          <div className="login__form__group">
+            <label className="login__input">Email address</label>
             <input
               type="email"
-              className="form__control"
+              className="login__form__control"
               id="email"
               placeholder="Enter email"
             />
           </div>
 
-          <div className="form__group">
-            <label className="input">Password</label>
+          <div className="login__form__group">
+            <label className="login__input">Password</label>
             <input
               type="password"
-              className="form__control"
+              className="login__form__control"
               id="password"
               placeholder="Password"
             />

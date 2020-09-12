@@ -41,7 +41,6 @@ body {
 }
 
 .footer__main {
-  padding: 1.25rem 1.875rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -70,7 +69,6 @@ body {
   color: #fff;
   cursor: pointer;
   border: 0;
-  padding: 0.625rem 0.9375rem;
   margin-top: 0.3125rem;
   margin-right: 5px;
   width: auto;
@@ -104,8 +102,8 @@ body {
     flex: 100%;
     max-width: 100%;
     width: auto;
-    margin-left: 10px;
-    white-space: normal;
+    margin-left: 15px;
+    margin-right: 10px;
   }
 }
 
@@ -130,14 +128,12 @@ body {
 }
 
 .footer__social {
-  padding: 0 1.875rem 1.25rem;
   justify-content: center;
 }
 .footer__socialList {
   display: flex;
   justify-content: center;
   border-top: 1px #777 solid;
-  padding-top: 1.25rem;
 }
 .footer__socialList li {
   margin: 0.5rem;
@@ -147,13 +143,13 @@ body {
 .footer__legal {
   background-color: #333;
   justify-content: center;
+  white-space: nowrap;
 }
 .footer__legalList {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 0.9375rem 1.875rem;
 }
 .footer__legalList li {
   margin: 0.125rem 0.625rem;
@@ -169,8 +165,8 @@ body {
     flex: 100%;
     width: 100%;
     height: auto;
-    white-space: normal;
     margin: auto;
+    white-space: nowrap;
   }
 }
 
@@ -184,5 +180,6 @@ body {
     margin-right: 10px;
     font-size: 12px;
     padding: 0px;
+    white-space: normal;
   }
 }

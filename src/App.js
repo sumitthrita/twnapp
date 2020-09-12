@@ -8,6 +8,7 @@ import Blog from './components/Blog';
 import Service from './components/Service';
 import Contact from './components/Contact';
 import Registration from './components/Registration';
+import Login from './components/Login';
 
  
 const App=()=> {
@@ -22,7 +23,8 @@ const App=()=> {
            <Route path="/services" exact strict component={Service} />
            <Route path="/contact" exact strict component={Contact}/>
            <Route path="/signup" exact strict component={Registration}/>
-         </Switch>
+           <Route path="/login" exact strict component={Login}/>
+          </Switch>
          </div>
    </Router>    
   );

@@ -1,6 +1,7 @@
 .contactHeader {
     text-align: center;
     margin:20px 0;
+    color: red;
  }
 
  .contactBody {
@@ -36,7 +37,7 @@
     margin:20px 0;
 }
 
-h2 {
+.contactSubtitle {
     margin:10px 0 20px 0;
     padding:5px 15px;
 }
@@ -66,8 +67,9 @@ h2 {
     }
     .contactBox {
         display:block;
-        width:100%;
+        width:50%;
         align-self: stretch;
+        flex: 1;
     }
     
 }

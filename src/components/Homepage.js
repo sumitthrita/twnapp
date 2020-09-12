@@ -52,7 +52,7 @@ const Homepage = () => {
           >
             <div class="box">
               <div className="homepage__bookNow">
-                <Button className="button" />
+                <Button className="button" buttonName="Book Now" />
                 <div className="homepage__arrowBox">
                   <p style={{ color: "#fff" }}>
                     it was popularised in the 1960s with the release of Letraset

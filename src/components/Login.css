@@ -9,7 +9,7 @@ body {
 .login__form {
   margin: auto;
   width: 50%;
-  /* padding: 10px; */
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ body {
 .login__button {
   width: 100%;
 }
-.login__button > input {
+.login__button > login__input {
   width: 200%;
 }
 
@@ -33,9 +33,9 @@ form {
   /* display: block; */
 }
 
-input[type="email"] {
+login__form__group > input[type="email"] {
   border: 0;
-  /* padding: 0.625rem; */
+  padding: 0.625rem;
   margin: 10px;
   border-radius: 4px;
   resize: vertical;
@@ -44,9 +44,9 @@ input[type="email"] {
   /* float: right; */
 }
 
-input[type="password"] {
+login__input[type="password"] {
   border: 0;
-  /* padding: 0.625rem; */
+  padding: 0.625rem;
   margin: 10px;
   border-radius: 4px;
   resize: vertical;
@@ -55,22 +55,22 @@ input[type="password"] {
   /* float: right; */
 }
 
-.form__control {
+.login__form__control {
   background-color: white;
-  /* margin: 5px; */
+  margin: 5px;
   border-radius: 4px;
   resize: vertical;
   border: 1px solid #ccc;
 }
 
-.form__group {
+.login__form__group {
   display: table-row;
   padding: 10px;
 }
 label {
   display: table-cell;
 }
-input {
+login__input {
   display: table-cell;
 }
 form {
@@ -78,8 +78,8 @@ form {
 }
 
 @media screen and (max-width: 600px) {
-  .input,
-  .form__control,
+  .login__input,
+  .login__form__control,
   input[type="submit"] {
     width: 100%;
     margin-top: 0;

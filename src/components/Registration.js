@@ -38,13 +38,15 @@ function RegistrationForm(props) {
     <div>
       <Header />
       <div className="register__form">
-        <form>
-          <h2 className="register__title">Register Form</h2>
+        <form className="registerform">
+          <div className="register__title">
+            <h2 className="rtitle">Register Form</h2>
+          </div>
           <div className="form__group">
             <label className="input">First Name</label>
             <input
               type="text"
-              className="form__control"
+              className="form__control , firstname"
               id="firstname"
               placeholder="Enter first name"
               // value={state.email}
@@ -55,7 +57,7 @@ function RegistrationForm(props) {
             <label className="input">Last Name</label>
             <input
               type="text"
-              className="form__control"
+              className="form__control , lastname"
               id="lastname"
               placeholder="Enter last name"
               // value={state.email}
@@ -63,10 +65,10 @@ function RegistrationForm(props) {
             />
           </div>
           <div className="form__group">
-            <label className="input">Email address</label>
+            <label className="input">Email Address</label>
             <input
               type="email"
-              className="form__control"
+              className="form__control , emailid"
               id="email"
               placeholder="Enter email"
               // value={state.email}
@@ -77,7 +79,7 @@ function RegistrationForm(props) {
             <label className="input">Contact Number</label>
             <input
               type="tel"
-              className="form__control"
+              className="form__control , contactnumber"
               id="phone number"
               placeholder="Enter phone number"
               // value={state.email}
@@ -88,7 +90,7 @@ function RegistrationForm(props) {
             <label className="input">Password</label>
             <input
               type="password"
-              className="form__control"
+              className="form__control , fpassword"
               id="password"
               placeholder="Password"
               // value={state.password}
@@ -99,28 +101,31 @@ function RegistrationForm(props) {
             <label className="input">Confirm Password</label>
             <input
               type="password"
-              className="form__control"
+              className="form__control , confirmpassword"
               id="confirmPassword"
               placeholder="Confirm Password"
             />
           </div>
           <div className="form__group">
-            <label className="input"> I Agree Terms &amp; Coditions </label>
+            <label className="input"> I Agree Terms &amp; Conditions </label>
             <input
               type="checkbox"
-              className="form__control"
+              className="form__control , checkbox"
               name="terms"
               id="terms"
               value=""
               // onchange={activateButton(this)}
             />
           </div>
-          <input type="submit" value="Submit"></input>
-          <br></br>
-          <br></br>
-          <p className="login">
-            Already have an account? <Link to="/Login">Login</Link>
-          </p>
+
+          <div className="register__button">
+            <br></br>
+            <input type="submit" value="Submit" className="submit"></input>
+            <br></br>
+            <p className="login">
+             Already have an account? <Link to="/Login">Login</Link>
+            </p>
+          </div>
         </form>
       </div>
       <Footer />

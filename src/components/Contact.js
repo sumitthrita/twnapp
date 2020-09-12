@@ -34,7 +34,7 @@ class Contact extends Component{
                      <ContactInfo /> 
                  </div>
                  <div className="contactBox" >
-                     <h2>Contact us for any help. </h2>
+                     <h2 className="contactSubtitle" >Contact us for any help. </h2>
                      <form className="contactForm">
                      <input onChange={this.handleChange} value={this.state.name} type="text" name="name" placeholder="Name" className="contactInput" />    
                      <input onChange={this.handleChange} value={this.state.phone} type="text" maxLength="10" name="contact" placeholder="Contact Number" className="contactInput" />

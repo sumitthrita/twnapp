@@ -25,8 +25,8 @@ const Footer = () => (
       <div className="footer__mainItems">
         <h4 className="footer__title">About Us</h4>
         <ul className="footer__subtitle">
-          <li>How Do We Function</li>
-          <li>Why Choose Us</li>
+          <li>How do we function</li>
+          <li>Why choose us</li>
           <li>FAQs</li>
         </ul>
       </div>
@@ -49,7 +49,7 @@ const Footer = () => (
           <input
             type="email"
             name="email"
-            placeholder="Enter Your Email Address"
+            placeholder="Enter EmailId"
             className="footer__formEmail"
           ></input>
           <input
