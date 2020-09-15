@@ -13,21 +13,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Aboutus from "./aboutus";
+import Feedback from './Feedback';
+import HomepageSlideshow from './HomepageSlideshow';
 
 import "./Homepage.css";
 // import { Carousel } from "react-bootstrap";
-const slides = [];
-slides.push(slideOne, slideTwo, slideThree, slideFour, slideFive);
+// const slides = [];
+// slides.push(slideOne, slideTwo, slideThree, slideFour, slideFive);
 
 const Homepage = () => {
-  const settings = {
-    dots: false,
-    arrows: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // const settings = {
+  //   dots: false,
+  //   arrows: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
 
   function createservicesection(service) {
     return (
@@ -42,9 +44,10 @@ const Homepage = () => {
   return (
     <div>
       <Header />
-      <div className="homepage__slideshow">
+      <HomepageSlideshow />
+      {/* <div className="homepage__slideshow">
         {/* <Slider {...settings}> */}
-        {slides.map((slide) => (
+        {/* {slides.map((slide) => (
           <div
             key={slide}
             style={{ backgroundImage: `url('${slide}')` }}
@@ -64,10 +67,8 @@ const Homepage = () => {
           </div>
         ))}
         {/* </Slider> */}
-      </div>
-      <div className="homepage__aboutus">
-        <Aboutus />
-      </div>
+     
+
       <div className="homepage__servicesection">
         <div className="servicearea">
           <div className="container">
@@ -81,6 +82,13 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="homepage__aboutus">
+        <Aboutus />
+      </div>
+      <div className="homepage__feedback">
+        <Feedback />
       </div>
       <Footer />
     </div>

@@ -1,10 +1,11 @@
 .service__img {
-  /* width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-  object-fit: cover; */
   width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service__cardImage {
+  width: auto;
   height: auto;
   object-fit: cover;
 }
@@ -12,13 +13,6 @@
 .service {
   margin: 10px;
 }
-
-/* .services__card {
-  margin: 10px;
-  padding: 1.25rem 1.875rem;
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .card {
   background-color: rgba(199, 199, 199, 0.356);
@@ -34,31 +28,27 @@
   padding: 5px;
 }
 
+.services__card :hover .Stitle .service__title .service__money {
+  background-color: red;
+  color: white;
+}
+
+.services__card :hover .Stitle .service__title {
+  background-color: red;
+  color: white;
+}
+.services__card :hover {
+  cursor: pointer;
+}
+
 .title {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 20px;
   float: left;
   align-items: left;
 }
-
-/* @media only screen and (min-width: 29.8125rem ) {
-  .impact {
-    justify-content: space-evenly;
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 60em) {
-  .impact {
-    justify-content: space-evenly;
-    font-size: 30px;
-  }
-} */
-
 .services__card {
   display: flex;
-  flex-wrap: wrap;
-  flex: 1;
   margin-bottom: auto;
   flex-direction: row;
   padding: 1.25rem;
@@ -72,66 +62,62 @@
   font-size: 15px;
 }
 
-@media only screen and (min-width: 29.8125rem) {
-  .services__card {
-    width: 100%;
-    flex: 1;
-  }
-}
-
-@media (min-width: 60em) {
-  .services__card {
-    width: auto;
-    height: auto;
-    flex: 1;
-  }
-}
-
-/* .list-group-flush {
-  color: red;
-  font-family: "Merriweather", serif;
-} */
-/* .service__description {
-  margin-top: 10px;
-} */
-
-/* .bikeservice__image {
-  width: 100%;
-}
-
-.impact {
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 60px;
-  color: #191970;
-  text-align: center;
-} */
-
-#service__button {
-  width: 10px;
+.service__cardButton {
+  width: 20%;
   font-size: 10px;
   border-radius: 5%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .service .services__card {
     width: auto;
     height: auto;
-    max-width: auto;
     margin: 0;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .service .Card.Img {
-    width: 100%;
+@media screen and (max-width: 280px) {
+  .service .services__card {
+    min-width: 20px;
+    height: auto;
+    margin: 0;
+    padding: 0px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .service .service__title,
+  .service__title .title,
+  .service__title .service__money {
+    min-width: 10px;
+    height: auto;
+    margin: 5px;
+    padding: 0px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .service .service__cardButton {
+    min-width: 10px;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+/* @media screen and (max-width: 500px) {
+  .service .services__card,
+  .services__card .Card.Img .service__img {
+    width: auto;
     height: auto;
     max-width: auto;
-    margin: 0;
-    object-fit: cover;
+    margin: auto;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .service .service__title,
   .service .title,
   .service p .service__money {
@@ -139,6 +125,5 @@
     height: auto;
     max-width: auto;
     margin: 0;
-    object-fit: cover;
   }
-}
+} */

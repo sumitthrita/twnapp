@@ -5,6 +5,7 @@ import ContactInfo from './ContactInfo';
 import Header from './Header';
 import Footer from './Footer';
 import Map from './Map';
+import HowWeWork from './HowWeWork';
 
 class Contact extends Component{
     constructor(props){
@@ -45,6 +46,7 @@ class Contact extends Component{
                  </div>
              </div>
             <Map /> 
+            <HowWeWork />
             <Footer />
          </div>
         )

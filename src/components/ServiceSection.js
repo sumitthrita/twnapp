@@ -1,7 +1,6 @@
 import React from "react";
 import "./ServiceSection.css";
 
-
 function ServiceSection(props) {
   return (
     <div className="servicearea">
@@ -18,7 +17,6 @@ function ServiceSection(props) {
                 <img src={props.img} alt="img" className="image" />
                 <h3 className="subtitle">{props.title} </h3>
               </div>
-
               {/* <i class="flaticon-right"></i> */}
             </div>
           </a>

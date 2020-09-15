@@ -37,96 +37,99 @@ function RegistrationForm(props) {
   return (
     <div>
       <Header />
-      <div className="register__form">
-        <form className="registerform">
-          <div className="register__title">
-            <h2 className="rtitle">Register Form</h2>
-          </div>
-          <div className="form__group">
-            <label className="input">First Name</label>
-            <input
-              type="text"
-              className="form__control , firstname"
-              id="firstname"
-              placeholder="Enter first name"
-              // value={state.email}
-              // onChange={handleChange}
-            />
-          </div>
-          <div className="form__group">
-            <label className="input">Last Name</label>
-            <input
-              type="text"
-              className="form__control , lastname"
-              id="lastname"
-              placeholder="Enter last name"
-              // value={state.email}
-              // onChange={handleChange}
-            />
-          </div>
-          <div className="form__group">
-            <label className="input">Email Address</label>
-            <input
-              type="email"
-              className="form__control , emailid"
-              id="email"
-              placeholder="Enter email"
-              // value={state.email}
-              // onChange={handleChange}
-            />
-          </div>
-          <div className="form__group">
-            <label className="input">Contact Number</label>
-            <input
-              type="tel"
-              className="form__control , contactnumber"
-              id="phone number"
-              placeholder="Enter phone number"
-              // value={state.email}
-              // onChange={handleChange}
-            />
-          </div>
-          <div className="form__group">
-            <label className="input">Password</label>
-            <input
-              type="password"
-              className="form__control , fpassword"
-              id="password"
-              placeholder="Password"
-              // value={state.password}
-              // onChange={handleChange}
-            />
-          </div>
-          <div className="form__group">
-            <label className="input">Confirm Password</label>
-            <input
-              type="password"
-              className="form__control , confirmpassword"
-              id="confirmPassword"
-              placeholder="Confirm Password"
-            />
-          </div>
-          <div className="form__group">
-            <label className="input"> I Agree Terms &amp; Conditions </label>
-            <input
-              type="checkbox"
-              className="form__control , checkbox"
-              name="terms"
-              id="terms"
-              value=""
-              // onchange={activateButton(this)}
-            />
-          </div>
+      <div className="register">
+        <div className="register__form">
+          <form className="registerform">
+            <div className="register__title">
+              <h2 className="rtitle">Register Form</h2>
+              <div className="bar"></div>
+            </div>
+            <div className="form__group">
+              <label className="input">First Name</label>
+              <input
+                type="text"
+                className="form__control , firstname"
+                id="firstname"
+                placeholder="Enter first name"
+                // value={state.email}
+                // onChange={handleChange}
+              />
+            </div>
+            <div className="form__group">
+              <label className="input">Last Name</label>
+              <input
+                type="text"
+                className="form__control , lastname"
+                id="lastname"
+                placeholder="Enter last name"
+                // value={state.email}
+                // onChange={handleChange}
+              />
+            </div>
+            <div className="form__group">
+              <label className="input">Email Address</label>
+              <input
+                type="email"
+                className="form__control , emailid"
+                id="email"
+                placeholder="Enter email"
+                // value={state.email}
+                // onChange={handleChange}
+              />
+            </div>
+            <div className="form__group">
+              <label className="input">Contact Number</label>
+              <input
+                type="tel"
+                className="form__control , contactnumber"
+                id="phone number"
+                placeholder="Enter phone number"
+                // value={state.email}
+                // onChange={handleChange}
+              />
+            </div>
+            <div className="form__group">
+              <label className="input">Password</label>
+              <input
+                type="password"
+                className="form__control , fpassword"
+                id="password"
+                placeholder="Password"
+                // value={state.password}
+                // onChange={handleChange}
+              />
+            </div>
+            <div className="form__group">
+              <label className="input">Confirm Password</label>
+              <input
+                type="password"
+                className="form__control , confirmpassword"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div className="form__group">
+              <label className="input"> I Agree Terms &amp; Conditions </label>
+              <input
+                type="checkbox"
+                className="form__control , checkbox"
+                name="terms"
+                id="terms"
+                value=""
+                // onchange={activateButton(this)}
+              />
+            </div>
 
-          <div className="register__button">
-            <br></br>
-            <input type="submit" value="Submit" className="submit"></input>
-            <br></br>
-            <p className="login">
-             Already have an account? <Link to="/Login">Login</Link>
-            </p>
-          </div>
-        </form>
+            <div className="register__button">
+              <br></br>
+              <input type="submit" value="Submit" className="submit"></input>
+              <br></br>
+              <p className="login">
+                Already have an account? <Link to="/Login">Login</Link>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
       <Footer />
     </div>

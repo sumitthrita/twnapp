@@ -1,0 +1,110 @@
+@media only screen and (max-width: 767px) {
+  .whychooseus__area {
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+}
+
+.whychooseus__area {
+  box-sizing: border-box;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  margin-top: 20px;
+}
+
+.whychooseus__container last-child {
+  margin-bottom: 0;
+}
+
+.whychooseus__icon {
+  margin-top: 10px;
+}
+@media (min-width: 640px) {
+  .whychooseus__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.whychooseus__container {
+  box-sizing: content-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whychooseus__singleItem {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: column;
+}
+.whychooseus__subtitle {
+  color: #191970;
+  line-height: 1.9;
+  margin-bottom: 15px;
+  margin-top: 0;
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+.whychooseus__grid {
+  border-radius: 20px;
+  border: 2px solid red;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .whychooseus__area .whychooseus__container,
+  .whychooseus__area .whychooseus__singleItem,
+  .whychooseus__area .whychooseus__subtitle {
+    width: auto;
+    height: auto;
+    max-width: auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    object-fit: cover;
+    justify-content: space-between;
+  }
+}
+
+/* .whychooseus__title {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.5s;
+  color: red;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px;
+} */
+
+/* @media screen and (max-width: 800px) {
+  .whychooseus .whychooseus__area,
+  .whychooseus_area .whychooseus_container,
+  .whychooseus .aboutus__content,
+  .aboutus__content .content,
+  .aboutus__content .aboutus__contentimg {
+    -ms-flex: 100%;
+    flex: 100%;
+    width: 90%;
+    font-size: 15px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .aboutus__content .aboutus__contentimg {
+    -ms-flex: 100%;
+    flex: 100%;
+    width: 50%;
+    max-width: 100%;
+    font-size: 15px;
+    padding-left: 0px;
+  }
+} */

@@ -2,11 +2,30 @@ import React from "react";
 import "./Footer.css";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
+import Image from "./logo.jpeg";
+
+import { Navbar, Nav } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => (
   <footer>
     <div className="footer__main">
+      <div className="footer__mainItems">
+        <div className="footer__logo">
+          <Navbar.Brand href="/">
+            <img className="footer__logoImage" src={Image} alt="twn-logo" />
+          </Navbar.Brand>
+
+          <ul className="footer__logoSubtitle">
+            <li>
+              <h5 className="fsubtitle">The Wheels Nation</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="footer__mainItems">
         <h4 className="footer__title">Menu</h4>
         <ul className="footer__subtitle">
@@ -18,6 +37,9 @@ const Footer = () => (
           </li>
           <li>
             <Link to="/blog">Blogs</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
           </li>
         </ul>
       </div>
@@ -32,16 +54,7 @@ const Footer = () => (
       </div>
 
       <div className="footer__mainItems">
-        <h2 className="footer__title">Contact</h2>
-        <ul className="footer__subtitle">
-          <li>Address </li>
-          <li>+91 7905162191 </li>
-          <li> +91 790872380</li>
-        </ul>
-      </div>
-
-      <div className="footer__mainItems">
-        <h2 className="footer__title">Stay Updated With Us</h2>
+        <h4 className="footer__title">Stay Updated With Us</h4>
         <p style={{ color: "#bbb" }} className="footer__subtitle">
           Subscribe to out newsletter to get our latest updates.
         </p>
@@ -64,14 +77,19 @@ const Footer = () => (
     <div className="footer__social">
       <ul class="footer__socialList">
         <li>
-          <Link to="/">
+          <a href="https://www.facebook.com/thewheelsnation/">
             <FacebookIcon />
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/">
+          <a href="https://instagram.com/thewheelsnation?igshid=sasuoomirnnx">
             <InstagramIcon />
-          </Link>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/thewheelsnation?s=09">
+            <TwitterIcon />
+          </a>
         </li>
       </ul>
     </div>

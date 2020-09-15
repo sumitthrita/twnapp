@@ -12,9 +12,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
+.register {
+  margin-top: 0px;
+}
 .register__button {
   width: 100%;
   float: right;
@@ -109,8 +113,7 @@ body {
   .registerform .register__title,
   .registerform .form__group,
   .registerform .input,
-  .registerform .form__control
-   {
+  .registerform .form__control {
     display: flex;
     flex-direction: column;
     -ms-flex: 50%;
@@ -119,14 +122,13 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:5px;
+    margin-bottom: 5px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .register__form,
-  .registerform .register__button 
-  {
+  .registerform .register__button {
     display: flex;
     flex-direction: column;
     -ms-flex: 50%;
