@@ -1,0 +1,93 @@
+.servicestitle {
+    position: relative;
+  }
+  
+  .homepage__servicesection {
+    margin-top: 50px;
+  }
+  @media only screen and (max-width: 767px) {
+    .servicestitle {
+      margin-bottom: 40px !important;
+      color: red;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .servicestitle span {
+      font-size: 13px;
+      text-transform: capitalize;
+      color: red;
+    }
+  }
+  
+  .servicestitle span {
+    margin-bottom: -5px;
+    color: red;
+    display: block;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .servicestitle h2 {
+      font-size: 23px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      color: red;
+    }
+  }
+  
+  .servicestitle h2 {
+    font-weight: 700;
+    line-height: 1.3;
+    color: red;
+  }
+  
+  .homepage__servicesectiondetails {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 20px auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .homepage__servicesectiondetails {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+
+  .bar {
+    position: relative;
+    z-index: 1;
+    background: #191970;
+    width: 55px;
+    height: 3px;
+    margin-top: 12px;
+    transition: 0.5s;
+  }
+  
+  .bar::before {
+    right: 20px;
+  }
+  .bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    background: #ffffff;
+    transition: 0.5s;
+  }
+  .bar::after {
+    right: 10px;
+  }
+  
+  .bar::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    background: #ffffff;
+    transition: 0.5s;
+  }
+  

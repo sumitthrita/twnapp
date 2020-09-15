@@ -1,0 +1,53 @@
+.services {
+  margin: 0;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.heading {
+  padding-left: 5%;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.form1 {
+  left: 5%;
+}
+
+.form2 {
+  left: 40%;
+}
+
+.brandNames {
+  width: 250px;
+  border-radius: 0;
+  height: 30px;
+}
+
+@media screen and (max-width: 720px) {
+  .dropdown {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .brands {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    padding: 10px;
+    position: static;
+  }
+}
