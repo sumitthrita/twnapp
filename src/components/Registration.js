@@ -42,7 +42,7 @@ function RegistrationForm(props) {
           <form className="registerform">
             <div className="register__title">
               <h2 className="rtitle">Register Form</h2>
-              <div className="bar"></div>
+              <div className="barid"></div>
             </div>
             <div className="form__group">
               <label className="input">First Name</label>

@@ -6,8 +6,8 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link } from "react-router-dom";
 import Image from "./logo.jpeg";
 
-import { Navbar, Nav } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Navbar} from "react-bootstrap";
+
 
 const Footer = () => (
   <footer>

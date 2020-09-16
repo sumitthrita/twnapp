@@ -2,6 +2,7 @@ import React from 'react';
 import slides from './HomepageSlideshowDetails';
 import Button from './Button';
 import './HomepageSlideshow.css';
+import {Link} from 'react-router-dom';
 
 
 const HomePageSlideshow = () => {
@@ -14,7 +15,9 @@ const HomePageSlideshow = () => {
         >
           <div class="box">
             <div className="homepage__bookNow">
+              <Link to="/services">
               <Button className="button" buttonName="Book Now" />
+              </Link>
               <div className="homepage__arrowBox">
                 <p style={{ color: "#fff" }}>
                   it was popularised in the 1960s with the release of Letraset

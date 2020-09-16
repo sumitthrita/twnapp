@@ -1,6 +1,7 @@
 import React from "react";
 import "./ServiceCard.css";
 import Button from "./Button";
+import {Link} from 'react-router-dom';
 
 function ServiceCard(props) {
   return (
@@ -23,11 +24,12 @@ function ServiceCard(props) {
             <div className="service__cardText">
               <p className="service__description">{props.description}</p>
             </div>
+            <Link to="/bikeInfo" >
             <Button
               id="service___button"
               buttonName="Book Service"
               className="service__cardButton"
-            />
+            /></Link>
           </div>
         </div>
       </div>

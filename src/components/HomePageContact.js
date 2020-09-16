@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import Button from "./Button";
-import "./Contact.css";
+import "./HomePageContact.css";
 import ContactInfo from "./ContactInfo";
-import Header from "./Header";
-import Footer from "./Footer";
 import {Link} from "react-router-dom";
 
 class Contact extends Component {
@@ -24,26 +22,25 @@ class Contact extends Component {
   };
   render() {
     return (
-      <div className="contactContainer">
-        <Header />
-        <header className="contactHeader">
-          <h1>Contact Us</h1>
-          <div className="barid"></div>
+      <div className="homepage__contactContainer">
+        <header className="homepage__contactHeader">
+          <h2>Contact Us</h2>
+          <div className="bar"></div>
         </header>
-        <div className="contactBody">
-          <div className="contactInfo">
+        <div className="homepage__contactBody">
+          <div className="homepage__contactInfo">
             <ContactInfo />
           </div>
-          <div className="contactBox">
-            <h2 className="contactSubtitle">Contact us for any help. </h2>
-            <form className="contactForm">
+          <div className="homepage__contactBox">
+            <h2 className="homepage__contactSubtitle">Contact us for any help. </h2>
+            <form className="homepage__contactForm">
               <input
                 onChange={this.handleChange}
                 value={this.state.name}
                 type="text"
                 name="name"
                 placeholder="Name"
-                className="contactInput"
+                className="homepage__-+contactInput"
               />
               <input
                 onChange={this.handleChange}
@@ -52,7 +49,7 @@ class Contact extends Component {
                 maxLength="10"
                 name="contact"
                 placeholder="Contact Number"
-                className="contactInput"
+                className="homepage__contactInput"
               />
               <input
                 onChange={this.handleChange}
@@ -60,7 +57,7 @@ class Contact extends Component {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="contactInput"
+                className="homepage__contactInput"
               />
               <textarea
                 onChange={this.handleChange}
@@ -69,18 +66,17 @@ class Contact extends Component {
                 type="text"
                 name="message"
                 placeholder="Your Message"
-                className="contactInput, contactMessage"
+                className="homepage__contactInput, homepage__contactMessage"
               />
-              <div className="contactButton">
+              <div className="homepage__contactButton">
                 <Button buttonName="Contact Us" />
               </div>
             </form>
           </div>
         </div>
         <Link to="./feedback">
-        <Button buttonName="Your Feedback To Our Service" className="fbutton"/>
+        <Button buttonName="Your Feedback To Our Service" className="feedback__button"/>
         </Link>
-        <Footer />
       </div>
     );
   }

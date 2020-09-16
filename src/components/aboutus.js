@@ -3,6 +3,7 @@ import "./aboutus.css";
 import images from "./images.jpeg";
 import WhyChooseUs from "./WhyChooseUs";
 import WhyChooseUsDetails from "./WhyChooseUsDetails";
+import HowWeWork from "./HowWeWork";
 
 const aboutus = () => {
   function createwhychooseus(content) {
@@ -17,8 +18,6 @@ const aboutus = () => {
   }
   return (
     <div>
-      <div className="aboutus">
-        <div className="aboutus__area">
           <div className="aboutus__container">
             <div className="aboutus__title">
               <h2>About Us </h2>
@@ -38,10 +37,6 @@ const aboutus = () => {
               <img src={images} alt="imagec" className="aboutus__contentimg" />
             </div>
           </div>
-        </div>
-      </div>
-      <div className="whychooseus__section">
-        <div className="whychooseus__area">
           <div className="whychooseus__container">
             <div className="whychooseus__title">
               <h2>Why Choose Us </h2>
@@ -51,8 +46,7 @@ const aboutus = () => {
               {WhyChooseUsDetails.map(createwhychooseus)}
             </div>
           </div>
-        </div>
-      </div>
+      <HowWeWork />
     </div>
   );
 };

@@ -9,7 +9,7 @@ function WhyChooseUs(props) {
               <h2>Why Choose Us </h2>
               <div className="bar"></div>
             </div> */
-    <div className="whychooseus__grid">
+    
       <div className="whychooseus__singleItem">
         <div className="whychooseus__icon">
           <props.img />
@@ -17,7 +17,7 @@ function WhyChooseUs(props) {
         <h5 className="whychooseus__title">{props.title}</h5>
         <p className="whychooseus__subtitle">{props.subtitle}</p>
       </div>
-    </div>
+
     // //   </div>
     // // </div>
   );

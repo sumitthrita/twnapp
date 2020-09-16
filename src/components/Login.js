@@ -13,7 +13,7 @@ function Login(props) {
       <div className="login__form">
         <form>
           <h2 className="login__title">Login Form</h2>
-
+          <div className="barid"></div>
           <div className="login__form__group">
             <label className="login__input">Email address</label>
             <input
@@ -23,7 +23,6 @@ function Login(props) {
               placeholder="Enter email"
             />
           </div>
-
           <div className="login__form__group">
             <label className="login__input">Password</label>
             <input

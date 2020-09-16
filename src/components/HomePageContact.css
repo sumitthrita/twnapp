@@ -1,0 +1,149 @@
+  
+.homepage__contactContainer{
+    box-sizing: border-box;
+    padding-top: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .homepage__contactContainer last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: 640px) {
+    .homepage__contactContainer {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .homepage__contactContainer{
+      padding-bottom: 5px;
+      font-size: 14px;
+    }
+  }
+  
+  .homepage__contactHeader {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  /* 
+  @media only screen and (max-width: 767px) {
+    .whychooseus__title {
+      margin-bottom: 40px !important;
+      color: red;
+    }
+  } */
+  
+  .homepage__contactHeader h2 {
+    font-weight: 700;
+    line-height: 1.3;
+    color: red;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .homepage__contactHeader h2 {
+      font-size: 23px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      color: red;
+    }
+  }
+  
+  
+  .bar {
+    position: relative;
+    z-index: 1;
+    background: #191970;
+    width: 55px;
+    height: 3px;
+    margin-top: 12px;
+    transition: 0.5s;
+  }
+  
+  .bar::before {
+    right: 20px;
+  }
+  .bar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    background: #ffffff;
+    transition: 0.5s;
+  }
+  .bar::after {
+    right: 10px;
+  }
+  
+  .bar::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    background: #ffffff;
+    transition: 0.5s;
+  }
+
+  
+ .homepage__contactBody {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    margin: 40px  50px;
+    /* justify-content: space-evenly; */
+}
+
+.homepage__contactInfo {
+    flex:30%;
+    max-width: 30%;
+    padding:10px;
+    vertical-align: middle;
+}
+.homepage__contactBox {
+    flex:70%;
+    max-width: 70%;
+    padding:5px 10px;
+    vertical-align: middle;
+}
+
+.homepage__contactForm {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:10px 20px;  
+}
+.homepage__contactInput {
+    padding:10px 0;
+    margin:20px 0;
+}
+
+.homepage__contactSubtitle {
+    margin:10px 0 20px 0;
+    padding:5px 15px;
+}
+
+.homepage__contactButton {
+    margin-top:30px;
+    
+}
+  
+.feedback__button{
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top:10px;
+}
+
+
+

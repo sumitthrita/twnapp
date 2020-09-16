@@ -4,7 +4,7 @@ import HomepageSlideshow from './HomepageSlideshow';
 import HomepageService from './HomepageService';
 import Footer from "./Footer";
 import Aboutus from "./aboutus";
-
+import Contact from './HomePageContact';
 
 const Homepage = () => {
   
@@ -14,6 +14,7 @@ const Homepage = () => {
       <HomepageSlideshow />
       <HomepageService />
       <Aboutus />
+      <Contact/>
       <Footer />
     </div>
   );

@@ -43,7 +43,6 @@ class Service extends Component {
             {ServiceCardDetails.map(createService)}
           </div>
         </div>
-
         <Footer />
       </div>
     );

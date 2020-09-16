@@ -1,0 +1,49 @@
+.bikeInfo__Container {
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   box-sizing: border-box;
+   padding-top: 5px;
+   font-family: "Poppins", sans-serif;
+   color:red;
+   font-weight: 400;
+   line-height: 1.5;
+   margin-top: 10px;
+   align-items:center;
+   
+}
+
+.bikeInfo__Brand_Dropdown {
+    margin: 20px 30px;
+    flex:30%;
+}
+
+.bikeInfo__Brand_input {
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+
+.bikeInfo__Model_Dropdown {
+    margin: 20px 30px;
+    flex: 30%;
+  
+}
+
+.bikeInfo__Model_input {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#dropdown-basic-button {
+    width: 300px;
+    
+}
+.dropdown__listItems
+{
+    overflow-y:scroll;
+    height:200px;
+}

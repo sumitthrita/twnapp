@@ -5,7 +5,13 @@ import React, {Component} from 'react';
 class ContactInfo extends Component{
     render(){
         return(
-            <h1>its contact information page</h1>
+            <div className="contactaddress">
+            <h5>Do Reach Us At</h5>
+            <p className="address">
+           Bannerghatta Main Rd, Bhavani Nagar, <br/> Bengaluru, Karnataka 560029<br/>
+           8105003848
+            </p>
+            </div>
         )
     }
 };

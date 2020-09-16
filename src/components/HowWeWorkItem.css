@@ -12,3 +12,79 @@
     color:black;
     width:100%
 } */
+
+@media only screen and (max-width: 767px) {
+  .HowWeWorkItem__Container {
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+}
+
+.HowWeWorkItem__Container {
+  box-sizing: border-box;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  margin-top: 20px;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.HowWeWorkItem__Container last-child {
+  margin-bottom: 0;
+}
+
+.HowWeWorkItem__Icon {
+  margin-top: 10px;
+
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .HowWeWorkItem__Container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.HowWeWorkItem__Container {
+  box-sizing: content-box;
+  margin-left: 20px;
+}
+
+.HowWeWorkItem__Container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: column;
+}
+.HowWeWorkItem__Detail {
+  color: #191970;
+  line-height: 1.9;
+  margin-top: 0;
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+/* .HowWeWork__Container {
+  border-radius: 20px;
+  border: 2px solid red;
+  padding: 5px 5px 5px 5px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+} */
+
+@media screen and (max-width: 400px) {
+  .HowWeWorkItem__Container,
+  .HowWeWorkItem__Container .HowWeWorkItem__Detail {
+    width: auto;
+    height: auto;
+    max-width: auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    object-fit: cover;
+    justify-content: space-between;
+  }
+}

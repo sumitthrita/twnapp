@@ -1,68 +1,101 @@
+.HowWeWork__Container {
+  box-sizing: border-box;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .howwework__title {
-    position: relative;
-  }
- 
-  @media only screen and (max-width: 767px) {
-    .howwework__title h2 {
-      font-size: 23px;
-      margin-top: 10px;
-      margin-bottom: 0;
-      color: red;
-    }
-  }
-  
+  position: relative;
+  margin-left:30px;
+}
+
+@media only screen and (max-width: 767px) {
   .howwework__title h2 {
-    font-weight: 700;
-    line-height: 1.3;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: red;
+    
+  }
+}
+
+.howwework__title h2 {
+  font-weight: 700;
+  line-height: 1.3;
+  color: red;
+}
+
+.bar {
+  position: relative;
+  z-index: 1;
+  background: #191970;
+  width: 55px;
+  height: 3px;
+  margin-top: 12px;
+  transition: 0.5s;
+}
+
+.bar::before {
+  right: 20px;
+}
+.bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  top: 0;
+  background: #ffffff;
+  transition: 0.5s;
+}
+.bar::after {
+  right: 10px;
+}
+
+.bar::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  top: 0;
+  background: #ffffff;
+  transition: 0.5s;
+}
+
+.HowWeWork__Items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .howwework__title {
     color: red;
   }
-  
-  .bar {
-    position: relative;
-    z-index: 1;
-    background: #191970;
-    width: 55px;
-    height: 3px;
-    margin-top: 12px;
-    transition: 0.5s;
+}
+
+@media only screen and (max-width: 767px) {
+  .howwework__title h2 {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: red;
   }
-  
-  .bar::before {
-    right: 20px;
-  }
-  .bar::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 3px;
-    top: 0;
-    background: #ffffff;
-    transition: 0.5s;
-  }
-  .bar::after {
-    right: 10px;
-  }
-  
-  .bar::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 3px;
-    top: 0;
-    background: #ffffff;
-    transition: 0.5s;
-  }
-  
-  .HowWeWork__Items{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: auto;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 20px;
-  }
+}
+
+.howwework__title h2 {
+  font-weight: 700;
+  line-height: 1.3;
+  color: red;
+}

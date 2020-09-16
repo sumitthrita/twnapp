@@ -8,8 +8,6 @@ import Star from "./StarRating";
 
 function Feedback() {
   return (
-    
-      
       <div className="feedback">
         <div className="div1">
           <h2>Rate our Services</h2>
@@ -32,9 +30,7 @@ function Feedback() {
             <input type="submit" value="Submit" />
           </form>
         </div>
-      </div>
-      
-    
+      </div>    
   );
 }
 

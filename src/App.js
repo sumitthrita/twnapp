@@ -9,6 +9,8 @@ import Service from './components/Service';
 import Contact from './components/Contact';
 import Registration from './components/Registration';
 import Login from './components/Login';
+import BikeInfo from './components/BikeInfo';
+import Feedback from './components/feedbackemotion';
 
  
 const App=()=> {
@@ -24,6 +26,8 @@ const App=()=> {
            <Route path="/contact" exact strict component={Contact}/>
            <Route path="/signup" exact strict component={Registration}/>
            <Route path="/login" exact strict component={Login}/>
+           <Route path="/bikeInfo" exact strict component={BikeInfo} />
+           <Route path="/feedback" eact strict component={Feedback} />
           </Switch>
          </div>
    </Router>    
